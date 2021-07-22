@@ -1,32 +1,35 @@
 
 This project covers different Alteryx Designer Workflow in order to respond to Business needs:  
 
-* The file "challenge_120_start_file.yxmd" contains a workflow throught which I determine the most popular names for Males and Females babies that were registered between the years of 1880 and 2017 for each available year.
+* The file "challenge_120_start_file.yxmd" contains a workflow throught which I determine the most popular names for Males and Females babies that were registered between the years of 1880 and 2017 for each available year. For this I used the following Tools:
+  * a Text to Columns Tool to split string data to Columns,
+  * a Formula Tool to retrieve substring withing a column,
+  * a Select Tool to remame Field Columns and choose relevant Fields,
+  * a Filter Tool to filter the data by Gender (F),
+  * 2 opposite Select Tool to rename the Field and choose relevant Fields for each opposite data,
+  * 2 opposite Summarize Tool to group each data by year and taking the other values
+  * a Join Tool to join the data on year values and,
+  * a Browse Tool to view the data J          
 
-* The file "challenge_1_start_file.yxmd" contains a workflow throught which I blended two data sets: one conraining Customer Records with a series of postal codes and another containing postcode ranges.
+* The file "challenge_1_start_file.yxmd" contains a workflow throught which I blended two data sets: one conraining Customer Records with a series of postal codes and another containing postcode ranges. For this I used the following Tools:
+  * a Text to columns Tool to split string data to columns by dash,
+  * a Select Tool to format splited string data to integer,
+  * an Append Fields Tool to join both the input data files,
+  * a Filter Tool to filter the data by the Field named Postal Area,
+  * a Summarize Tool to group the data by Fields named "Region", "Sales Rep" and "Responder" and count Filed named "Customer ID"      
 
 * The file "challenge_2_start_file.yxmd" contains a workflow that prepare delimited data by removing quotes and double quotes. For this I used the following Tools:
-  * Text To Columns Tool to separate data by commas into columns, 
-  * Formula Tool to strip quotes within columns,
-  * DateTime Tool to reformat DateTime data,
-  * Select Tool to rename columns, resize data types and choose appropriate columns for the output data,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  * Browse Tool to view the output data    
-=======
-=======
->>>>>>> main
-  * Browse Tool to view the output data
+  * a Text To Columns Tool to separate data by commas into columns, 
+  * a Formula Tool to strip quotes within columns,
+  * a DateTime Tool to reformat DateTime data,
+  * a Select Tool to rename columns, resize data types and choose relevant columns for the output data,
+  * a Browse Tool to view the output data
 
 * The file "challenge_38_start_file.yxmd" contains a workflow that blends three sources of data tables named "Product Group", "Region Reference" and "Data" and create a batch output for each product-region combination. For this I used the following Tools:
-  * Sample Tool to extract usefull records both in "Region Reference" and "Product Group Reference",
-  * Twice the Find and Repalace Tool, first to combine the "Data" table and the "Region Reference" table and secondly to combine the output data with the "Product Group Reference" table,
-  * The Formula Tool to create the batch output files names,
-<<<<<<< HEAD
-  * The Output Data Tool to write the data into (.csv) format to a directory named "Challenge38-files"       
->>>>>>> main
-=======
-  * The Output Data Tool to produce 15 output files, one for each product-region combination into (.csv) format to a directory named "Challenge38-files".     
->>>>>>> main
+  * a Sample Tool to extract usefull records both in "Region Reference" and "Product Group Reference",
+  * a Find and Repalace Tool to combine the "Data" table and the "Region Reference" table,
+  * a Find and Repalace Tool to combine the previous output data with the "Product Group Reference" table
+  * a Formula Tool to create the batch output files names,
+  * an Output Data Tool to produce 15 output files, one for each product-region combination into (.csv) format to a directory named "Challenge38-files".
 
 
