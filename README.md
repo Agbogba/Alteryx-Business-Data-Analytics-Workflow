@@ -1,5 +1,5 @@
 
-This project present my solutions where I builed Alteryx Designer Workflow with Business data to address ADAPT Program challenges.
+This projects present my solutions where I builed Alteryx Designer Workflow with Business data to address ADAPT Program challenges.
 
 
 1. Challenge #120: Popular Baby Names:
