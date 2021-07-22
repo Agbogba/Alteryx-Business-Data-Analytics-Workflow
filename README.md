@@ -1,11 +1,11 @@
 
 This project covers different Alteryx Designer Workflow in order to respond to Business needs:  
 
-* The file "challenge_120_start_file.yxmd" contains a workflow throught which I determine the most popular names for Males and Females babies that were registered between the years of 1880 and 2017 for each available year. For this I used the following Tools:
+* The file "challenge_120_start_file.yxmd" contains a workflow throught which I determine the most popular names for Males and Females babies that were registered between the years of 1880 and 2017 for each available year included in the file "names.yxdb". For this I used the following Tools:
   * a Text to Columns Tool to split string data to Columns,
   * a Formula Tool to retrieve substring withing a column,
   * a Select Tool to remame Field Columns and choose relevant Fields,
-  * a Filter Tool to filter the data by Gender (F),
+  * a Filter Tool to filter the data by Gender value "F",
   * 2 opposite Select Tool to rename the Field and choose relevant Fields for each opposite data,
   * 2 opposite Summarize Tool to group each data by year and taking the other values
   * a Join Tool to join the data on year values and,
