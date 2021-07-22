@@ -2,7 +2,7 @@
 This project present my solutions where I builed Alteryx Designer Workflow with Business data to address ADAPT Program challenges.
 
 
-* Challenge #120: Popular Baby Names:
+1. Challenge #120: Popular Baby Names:
  
 The file "challenge_120_start_file.yxmd" contains a workflow throught which I determine the most popular names for Males and Females babies that were registered between the years of 1880 and 2017 for each available year included in the file "names.yxdb". For this I used the following Tools:
 
@@ -15,7 +15,8 @@ The file "challenge_120_start_file.yxmd" contains a workflow throught which I de
    * a Join Tool to join the data on year values and,
    * a Browse Tool to view the data J          
 
-* Challenge #1: Join to Range:
+
+2. Challenge #1: Join to Range:
 
 The file "challenge_1_start_file.yxmd" contains a workflow throught which I blended two data sets: one conraining Customer Records with a series of postal codes and another containing postcode ranges. For this I used the following Tools:
 
@@ -25,7 +26,8 @@ The file "challenge_1_start_file.yxmd" contains a workflow throught which I blen
    * a Filter Tool to filter the data by the Field named Postal Area,
    * a Summarize Tool to group the data by Fields named "Region", "Sales Rep" and "Responder" and count Filed named "Customer ID"      
 
-* Challenge #2: Preparing Delimited Data:
+
+3. Challenge #2: Preparing Delimited Data:
 
 The file "challenge_2_start_file.yxmd" contains a workflow that prepare delimited data by removing quotes and double quotes from an input data. For this I used the following Tools:
 
@@ -34,8 +36,9 @@ The file "challenge_2_start_file.yxmd" contains a workflow that prepare delimite
    * a DateTime Tool to reformat DateTime data,
    * a Select Tool to rename columns, resize data types and choose relevant columns for the output data,
    * a Browse Tool to view the output data
+ 
 
-* Challenge #38: Data Blending for Batch Output:
+4. Challenge #38: Data Blending for Batch Output:
 
 The file "challenge_38_start_file.yxmd" contains a workflow that blends three sources of data tables named "Product Group", "Region Reference" and "Data" and create a batch output for each product-region combination. For this I used the following Tools:
 
