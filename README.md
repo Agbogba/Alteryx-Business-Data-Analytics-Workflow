@@ -10,6 +10,16 @@ This project covers different Alteryx Designer Workflow in order to respond to B
   * Formula Tool to strip quotes within columns,
   * DateTime Tool to reformat DateTime data,
   * Select Tool to rename columns, resize data types and choose appropriate columns for the output data,
+<<<<<<< HEAD
   * Browse Tool to view the output data    
+=======
+  * Browse Tool to view the output data
+
+* The file "challenge_38_start_file.yxmd" contains a workflow that blends three sources of data tables named "Product Group", "Region Reference" and "Data" and create a batch output for each product-region combination. For this I used the following Tools:
+  * Sample Tool to extract usefull records both in "Region Reference" and "Product Group Reference",
+  * Twice the Find and Repalace Tool, first to combine the "Data" table and the "Region Reference" table and secondly to combine the output data with the "Product Group Reference" table,
+  * The Formula Tool to create the batch output files names,
+  * The Output Data Tool to write the data into (.csv) format to a directory named "Challenge38-files"       
+>>>>>>> main
 
 
