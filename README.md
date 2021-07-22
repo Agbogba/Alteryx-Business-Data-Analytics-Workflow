@@ -16,6 +16,6 @@ This project covers different Alteryx Designer Workflow in order to respond to B
   * Sample Tool to extract usefull records both in "Region Reference" and "Product Group Reference",
   * Twice the Find and Repalace Tool, first to combine the "Data" table and the "Region Reference" table and secondly to combine the output data with the "Product Group Reference" table,
   * The Formula Tool to create the batch output files names,
-  * The Output Data Tool to write the data into (.csv) format       
+  * The Output Data Tool to write the data into (.csv) format to a directory named "Challenge38-files"       
 
 
