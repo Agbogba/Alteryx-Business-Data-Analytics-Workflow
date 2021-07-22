@@ -18,7 +18,7 @@ This project covers different Alteryx Designer Workflow in order to respond to B
   * a Filter Tool to filter the data by the Field named Postal Area,
   * a Summarize Tool to group the data by Fields named "Region", "Sales Rep" and "Responder" and count Filed named "Customer ID"      
 
-* The file "challenge_2_start_file.yxmd" contains a workflow that prepare delimited data by removing quotes and double quotes. For this I used the following Tools:
+* The file "challenge_2_start_file.yxmd" contains a workflow that prepare delimited data by removing quotes and double quotes from an input data. For this I used the following Tools:
   * a Text To Columns Tool to separate data by commas into columns, 
   * a Formula Tool to strip quotes within columns,
   * a DateTime Tool to reformat DateTime data,
