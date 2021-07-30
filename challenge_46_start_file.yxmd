@@ -3,32 +3,15 @@
   <Nodes>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="60" y="222" width="216" height="156" />
+        <Position x="54" y="249" width="216" height="160" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Input</Text>
+          <Text><![CDATA[Input
+
+
+]]></Text>
           <Font name="Microsoft Sans Serif" size="7.8" style="0" />
-          <TextColor name="Gray" />
-          <FillColor name="White" />
-          <Shape shape="0" />
-          <Justification Justification="4" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="16">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="455" y="222" width="216" height="156" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>Output</Text>
-          <Font name="Lato" size="7.8" style="0" />
           <TextColor name="Gray" />
           <FillColor name="White" />
           <Shape shape="0" />
@@ -43,7 +26,7 @@
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="324" height="72" />
+        <Position x="59" y="54" width="324" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -64,12 +47,12 @@
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="450" y="70" width="300" height="40" />
+        <Position x="455" y="70" width="300" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Weekly Challenge #2</Text>
-          <Font name="Lato" size="16.2" style="0" />
+          <Text>Weekly Challenge #46</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
           <TextColor name="Gray" />
           <FillColor name="White" />
           <Shape shape="3" />
@@ -84,15 +67,16 @@
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="59" y="114" width="612" height="96" />
+        <Position x="54" y="119" width="612" height="110" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text><![CDATA[Many products will export textual data with delimiters such as quotes.  This is done so that strings can contain delimiters or control characters within them.   Having more than one type of delimiter can be hard for ETL programs to interpret.  In the input text file, there are two different delimiters (double quotes, single quotes) and they surround different data types.
+          <Text>Data Prep Date Formatting:
 
-Use Alteryx to strip out the delimiters as superfluous and format the data as represented in the output
-]]></Text>
-          <Font name="Lato" size="7.8" style="0" />
+Use case: The Input contains dates formatted as year, month and day. In this case the first character determines if the year should begin with 19 or 20.   If the first character is 0 then the year starts with 19, and when the first character is 1 the year starts with 20.  The remainder of the date following the 0 or 1 is the remaining year digits followed by month followed by day.
+
+Objective: Please convert these strings into date formatted field.</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
           <TextColor name="Gray" />
           <FillColor name="White" />
           <Shape shape="0" />
@@ -105,40 +89,13 @@ Use Alteryx to strip out the delimiters as superfluous and format the data as re
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="32">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="90" y="270" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <NumRows value="2" />
-          <Fields>
-            <Field name="Field_1" />
-          </Fields>
-          <Data>
-            <r>
-              <c>"Mary had a little lamb whose fleece was white as snow",123,'16-JUN-01'</c>
-            </r>
-            <r>
-              <c>"I do not like green eggs and ham",456,'25-DEC-10'</c>
-            </r>
-          </Data>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
-    </Node>
-    <Node ToolID="33">
+    <Node ToolID="236">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="186" y="270" />
+        <Position x="174" y="309" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_15012_c172f4d3cc784dd8a0df42f1eb3d22b1_\Engine_5136_ffbe8c55b8e143f09872ea878161be56_.yxdb</TempFile>
+          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_4648_8f9fa59b6eae43db895be26b283cee2e_\Engine_684_77ba16294d41400597c788a11576f690_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -155,30 +112,18 @@ Use Alteryx to strip out the delimiters as superfluous and format the data as re
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="34">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="480" y="270" />
+    <Node ToolID="237">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="444" y="249" width="216" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <NumRows value="2" />
-          <Fields>
-            <Field name="Poem" />
-            <Field name="Poem_ID" />
-            <Field name="Poem_Read_Date" />
-          </Fields>
-          <Data>
-            <r>
-              <c>Mary had a little lamb whose fleece was white as snow</c>
-              <c>123</c>
-              <c>2001-06-16</c>
-            </r>
-            <r>
-              <c>I do not like green eggs and ham</c>
-              <c>456</c>
-              <c>2010-12-25</c>
-            </r>
-          </Data>
+          <Text>Output</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -186,15 +131,14 @@ Use Alteryx to strip out the delimiters as superfluous and format the data as re
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="35">
+    <Node ToolID="239">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="594" y="270" />
+        <Position x="574" y="309" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_15012_c172f4d3cc784dd8a0df42f1eb3d22b1_\Engine_5136_6e531b41056c4d4faa0c3ba2a61b8e91_.yxdb</TempFile>
+          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_4648_8f9fa59b6eae43db895be26b283cee2e_\Engine_684_62175c1899384c579c7e4cffd06e71b1_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -216,19 +160,48 @@ Use Alteryx to strip out the delimiters as superfluous and format the data as re
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="36">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="210" y="426" />
+    <Node ToolID="256">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="74" y="309" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Field>Field_1</Field>
-          <ErrorHandling>Last</ErrorHandling>
-          <RootName>
-          </RootName>
-          <Delimeters value="," />
-          <NumFields value="3" />
-          <Flags value="1" />
+          <NumRows value="10" />
+          <Fields>
+            <Field name="date" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1040202</c>
+            </r>
+            <r>
+              <c>0990930</c>
+            </r>
+            <r>
+              <c>1141030</c>
+            </r>
+            <r>
+              <c>1090613</c>
+            </r>
+            <r>
+              <c>1110313</c>
+            </r>
+            <r>
+              <c>0000101</c>
+            </r>
+            <r>
+              <c>0760704</c>
+            </r>
+            <r>
+              <c>0940614</c>
+            </r>
+            <r>
+              <c>0470403</c>
+            </r>
+            <r>
+              <c>0520513</c>
+            </r>
+          </Data>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -236,21 +209,120 @@ Use Alteryx to strip out the delimiters as superfluous and format the data as re
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="37">
+    <Node ToolID="257">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="464" y="309" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="10" />
+          <Fields>
+            <Field name="date" />
+            <Field name="DateTime_Out" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1040202</c>
+              <c>2004-02-02</c>
+            </r>
+            <r>
+              <c>0990930</c>
+              <c>1999-09-30</c>
+            </r>
+            <r>
+              <c>1141030</c>
+              <c>2014-10-30</c>
+            </r>
+            <r>
+              <c>1090613</c>
+              <c>2009-06-13</c>
+            </r>
+            <r>
+              <c>1110313</c>
+              <c>2011-03-13</c>
+            </r>
+            <r>
+              <c>0000101</c>
+              <c>1900-01-01</c>
+            </r>
+            <r>
+              <c>0760704</c>
+              <c>1976-07-04</c>
+            </r>
+            <r>
+              <c>0940614</c>
+              <c>1994-06-14</c>
+            </r>
+            <r>
+              <c>0470403</c>
+              <c>1947-04-03</c>
+            </r>
+            <r>
+              <c>0520513</c>
+              <c>1952-05-13</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="258">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="270" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Find Year</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Find Year From:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="259">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="174" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Left([date], 1) == &quot;1&quot;&#xA;THEN &quot;20&quot;+Right([date], length([date])-1) ELSEIF Left([date], 1) == &quot;0&quot;&#xA;THEN &quot;19&quot; + Right([date], length([date])-1) ELSE [date]&#xA;ENDIF" field="Find Year" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Find Year = if Left([date], 1) == "1"
+THEN "20"+Right([date], length([date])-1) ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="260">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="486" y="474" />
+        <Position x="378" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Field_1" selected="False" />
-            <SelectField field="1" selected="True" rename="Poem" size="53" />
-            <SelectField field="2" selected="True" rename="Poem_ID" type="Int16" size="2" />
-            <SelectField field="3" selected="False" type="Date" size="10" />
+            <SelectField field="Find Year" selected="False" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -262,105 +334,27 @@ Use Alteryx to strip out the delimiters as superfluous and format the data as re
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="38">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-        <Position x="390" y="474" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <IsFrom value="False" />
-          <InputFieldName>3</InputFieldName>
-          <Language>English</Language>
-          <Format>dd-Mon.-yy</Format>
-          <OutputFieldName>Poem_Read_Date</OutputFieldName>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Convert 3 From:
-dd-Mon.-yy</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-    </Node>
-    <Node ToolID="39">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="294" y="438" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="StripQuotes([1])" field="1" size="71" type="V_String" />
-            <FormulaField expression="StripQuotes([3])" field="3" size="71" type="V_String" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[1 = StripQuotes([1])
-3 = StripQuotes([3])
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="40">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="618" y="474" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_15012_c172f4d3cc784dd8a0df42f1eb3d22b1_\Engine_5136_533a171f05814143887e38416e5371d8_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
   </Nodes>
   <Connections>
     <Connection>
-      <Origin ToolID="32" Connection="Output" />
-      <Destination ToolID="33" Connection="Input" />
+      <Origin ToolID="256" Connection="Output" />
+      <Destination ToolID="236" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="32" Connection="Output" />
-      <Destination ToolID="36" Connection="Input" />
+      <Origin ToolID="256" Connection="Output" />
+      <Destination ToolID="259" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="34" Connection="Output" />
-      <Destination ToolID="35" Connection="Input" />
+      <Origin ToolID="257" Connection="Output" />
+      <Destination ToolID="239" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="36" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
+      <Origin ToolID="258" Connection="Output" />
+      <Destination ToolID="260" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="37" Connection="Output" />
-      <Destination ToolID="40" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="39" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
+      <Origin ToolID="259" Connection="Output" />
+      <Destination ToolID="258" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -382,7 +376,7 @@ dd-Mon.-yy</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>challenge_2_start_file</Name>
+      <Name>challenge_46_start_file</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -397,10 +391,10 @@ dd-Mon.-yy</DefaultAnnotationText>
         <Description />
         <File />
       </Example>
-      <WorkflowId value="2c6ba588-5b7a-4376-a328-e12e9a6dc767" />
+      <WorkflowId value="05ed3b10-9178-4990-9854-7a39f25db2bb" />
       <Telemetry>
         <PreviousWorkflowId value="" />
-        <OriginWorkflowId value="2c6ba588-5b7a-4376-a328-e12e9a6dc767" />
+        <OriginWorkflowId value="05ed3b10-9178-4990-9854-7a39f25db2bb" />
       </Telemetry>
     </MetaInfo>
     <Events>

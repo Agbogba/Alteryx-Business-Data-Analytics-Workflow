@@ -18956,7 +18956,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_16688_8fcc5de148044d03b1df4557a71598f0_\Engine_17572_2ef89caf277d46809ad9093a4ef65abd_.yxdb</TempFile>
+          <TempFile>C:\Users\arman\AppData\Local\Temp\Engine_3280_d0aa3d5d5720422ea1bacda07e381082_\Engine_5136_dbfdac41e619497b847d2b6f400dd89f_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -19065,7 +19065,7 @@ Each Customer Record needs to be joined to the Lookup table based on a Postal Ar
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="222" y="738" />
+        <Position x="222" y="618" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -19154,28 +19154,6 @@ Each Customer Record needs to be joined to the Lookup table based on a Postal Ar
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
     </Node>
-    <Node ToolID="37">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="654" y="558" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Layout>
-            <View1>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -19205,10 +19183,6 @@ Each Customer Record needs to be joined to the Lookup table based on a Postal Ar
     <Connection>
       <Origin ToolID="35" Connection="True" />
       <Destination ToolID="36" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="36" Connection="Output" />
-      <Destination ToolID="37" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

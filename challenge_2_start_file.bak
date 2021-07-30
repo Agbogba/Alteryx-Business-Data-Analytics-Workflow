@@ -8,7 +8,7 @@
       <Properties>
         <Configuration>
           <Text>Input</Text>
-          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <Font name="Lato" size="7.8" style="0" />
           <TextColor name="Gray" />
           <FillColor name="White" />
           <Shape shape="0" />
