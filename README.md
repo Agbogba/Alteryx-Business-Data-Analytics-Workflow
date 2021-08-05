@@ -47,5 +47,14 @@ The file "challenge_38_start_file.yxmd" contains a workflow that blends three so
     * a Find and Repalace Tool to combine the previous output data with the "Product Group Reference" table
     * a Formula Tool to create the batch output files names,
     * an Output Data Tool to produce 15 output files, one for each product-region combination into (.csv) format to a directory named "Challenge38-files".
+    
+5. Challenge #35: Data Cleansing Practice
+
+The file "challenge_35_start_file.yxmd" contains 4 independant workflows that perform data cleansing:
+    * The first workflow hepls removing leading zeroes using one Fornula Tool to trim zeros on left side followed by a Filter Tool to change the type of string values to integer and a Browse Tool
+    * The second workflow helps to trim leading zeroes and/or descriptive text at the end by using one Record ID Tool to enumerate the records followed by one Formula Tool to remove zeroes on left if applicable, a Filter Tool to select and rename appropiate fileds and a Browse Tool
+    * The third workflow uses a Formula Tool followed by a Select Tool amd a Browse Tool to remove the ID if the data value ends with ID
+    * The fourth workflow uses a Formula Tool followed by a Select Tool and Browse Tool to remove anything after 8 if more than 8 chars, and add “SC” to the front if only 6.
+    
 
 
