@@ -60,8 +60,9 @@ The file "challenge_35_start_file.yxmd" contains 4 independant workflows that pe
 6. Challenge #46: Formatting a Date from an Integer
 
 The file "challenge_46_start_file.yxmd" contains a workflow with one Formula Tool followed by a DateTime Tool and a Select Tool to solve the following issue:
-    * Use case: The Input contains dates formatted as year, month and day. In this case, the first character determines if the year should begin with 19 or 20.   If the first character is 0 then the year starts with 19, and when the first character is 1 the year starts with 20.  The remainder of the date following the 0 or 1 is the remaining year digits followed by month followed by day.
-    * Objective: Please convert these strings into date formatted field.
+
+    Use case: The Input contains dates formatted as year, month and day. In this case, the first character determines if the year should begin with 19 or 20. If the first character is 0 then the year starts with 19, and when the first character is 1 the year starts with 20.  The remainder of the date following the 0 or 1 is the remaining year digits followed by month followed by day.
+    Objective: Please convert these strings into date formatted field.
     
 
 
