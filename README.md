@@ -51,10 +51,17 @@ The file "challenge_38_start_file.yxmd" contains a workflow that blends three so
 5. Challenge #35: Data Cleansing Practice
 
 The file "challenge_35_start_file.yxmd" contains 4 independant workflows that perform data cleansing:
+
     * The first workflow hepls removing leading zeroes using one Fornula Tool to trim zeros on left side followed by a Filter Tool to change the type of string values to integer and a Browse Tool
     * The second workflow helps to trim leading zeroes and/or descriptive text at the end by using one Record ID Tool to enumerate the records followed by one Formula Tool to remove zeroes on left if applicable, a Filter Tool to select and rename appropiate fileds and a Browse Tool
     * The third workflow uses a Formula Tool followed by a Select Tool amd a Browse Tool to remove the ID if the data value ends with ID
     * The fourth workflow uses a Formula Tool followed by a Select Tool and Browse Tool to remove anything after 8 if more than 8 chars, and add “SC” to the front if only 6.
+
+6. Challenge #46: Formatting a Date from an Integer
+
+The file "challenge_46_start_file.yxmd" contains a workflow with one Formula Tool followed by a DateTime Tool and a Select Tool to solve the following issue:
+    * Use case: The Input contains dates formatted as year, month and day. In this case, the first character determines if the year should begin with 19 or 20.   If the first character is 0 then the year starts with 19, and when the first character is 1 the year starts with 20.  The remainder of the date following the 0 or 1 is the remaining year digits followed by month followed by day.
+    * Objective: Please convert these strings into date formatted field.
     
 
 
